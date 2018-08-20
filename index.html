@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Project 3</title>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+	<h1>THE CODE REVIEW</h1>
+	</header>
+
+<div class="headline">
+	<p class="newsletter_signup"><strong>Signup for our newsletter</strong></p>
+	<p class="tagline">Get the latest news on how your code is doing right in your inbox!</p>
+</div>
+
+<hr>
+
+<p class="contact_info">Contact Information</p>
+
+<form action="index.html" method="post">
+
+	<fieldset class="user_info">
+		<label for="name">Full Name</label>
+		<input required type="text" id="name" name="user_name" placeholder="ex. Leslie Knope">
+
+		<label for="mail">Email</label>
+		<input required type="email" id="mail" name="user_email" placeholder="ex. l.knope@prc_pawnee.com">
+
+		<label for="phone">Phone Number</label>
+		<input type="tel" id="phone" name="user_phone" placeholder="ex. (555) 123-4567">
+
+		<label for="street-address">Street Address</label>
+		<input type="street-address" id="address" name="user_address" placeholder="ex. 14 Swanson St.">
+
+		<label for="city">City</label>
+		<input type="text" id="city" name="user_city" placeholder="ex. Pawnee">
+
+		<label for="state">State</label>
+		<select id="state" placeholder="ex. IN" name="user_state">
+			<option value="AL">AL</option>
+			<option value="AK">AK</option>
+			<option value="AR">AR</option>
+			<option value="AZ">AZ</option>
+			<option value="CA">CA</option>
+			<option value="CO">CO</option>
+			<option value="CT">CT</option>
+			<option value="DC">DC</option>
+			<option value="DE">DE</option>
+			<option value="FL">FL</option>
+			<option value="GA">GA</option>
+			<option value="HI">HI</option>
+			<option value="IA">IA</option>
+			<option value="ID">ID</option>
+			<option value="IL">IL</option>
+			<option value="IN">IN</option>
+			<option value="KS">KS</option>
+			<option value="KY">KY</option>
+			<option value="LA">LA</option>
+			<option value="MA">MA</option>
+			<option value="MD">MD</option>
+			<option value="ME">ME</option>
+			<option value="MI">MI</option>
+			<option value="MN">MN</option>
+			<option value="MO">MO</option>
+			<option value="MS">MS</option>
+			<option value="MT">MT</option>
+			<option value="NC">NC</option>
+			<option value="NE">NE</option>
+			<option value="NH">NH</option>
+			<option value="NJ">NJ</option>
+			<option value="NM">NM</option>
+			<option value="NV">NV</option>
+			<option value="NY">NY</option>
+			<option value="ND">ND</option>
+			<option value="OH">OH</option>
+			<option value="OK">OK</option>
+			<option value="OR">OR</option>
+			<option value="PA">PA</option>
+			<option value="RI">RI</option>
+			<option value="SC">SC</option>
+			<option value="SD">SD</option>
+			<option value="TN">TN</option>
+			<option value="TX">TX</option>
+			<option value="UT">UT</option>
+			<option value="VT">VT</option>
+			<option value="VA">VA</option>
+			<option value="WA">WA</option>
+			<option value="WI">WI</option>
+			<option value="WV">WV</option>
+			<option value="WY">WY</option>
+		</select>
+
+		<label for="zip">Zip Code</label>
+		<input type="postal-code" id="zip" name="user_zip" placeholder="ex. 12345">
+
+	</fieldset>
+
+<hr>
+
+<p class="newsletter_info">Newsletter</p>
+<p class="tagline">Select the newsletters you would like to receive.</p>
+
+<fieldset class="newsletter_selection">
+
+	<input type="checkbox" id="html" name="html_news">
+	<label for="html">HTML News</label>
+	<br>
+
+	<input type="checkbox" id="css" name="css_news">
+	<label for="css">CSS News</label>
+	<br>
+
+	<input type="checkbox" id="javascript" name="javascript_news">
+	<label for="javascript">Javascript News</label>
+
+
+	<p class="newsletter-format">Newsletter format</p>
+
+	<input type="radio" id="html-format" name="format">
+	<label for="html-format">HTML</label>
+	<br>
+
+	<input type="radio" id="plain-format" name="format">
+	<label for="plain_txt-format">Plain text</label>
+	<br>
+	<br>
+
+	<label for="other">Other topics you'd like to hear about:</label>
+	<textarea id="other-topics" name="other-topics"
+	rows="5" cols="50" maxlength="200" wrap="hard"></textarea>
+
+</fieldset>
+
+<button class="sign-up" type="submit">Sign Up</button>
+
+</form>
+
+<footer>
+<p class="ft-text">&copy; Copyright The Code Review</p>
+</footer>
+
+</body>
+</html>
