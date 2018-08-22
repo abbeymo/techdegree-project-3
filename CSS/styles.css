@@ -4,13 +4,13 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-	}
+}
 
 body {
   margin: 0;
   padding:0;
   font-family: 'Slabo 27px', serif;
-  }
+}
 
 /* heading styles */
 header {
@@ -20,44 +20,44 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-      }
+}
 
 .headline {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-right: 15px;
-    }
+}
 
 .newsletter_signup {
   font-size: 24px;
   color: #333;
   text-align: center;
   margin-bottom: 0;
-    }
+}
 
 .tagline {
   font-size: 20px;
   color: gray;
   margin-left: 15px;
-  }
+}
 
 hr {
   border-top: 8px solid #333;
   border-bottom: 5px solid #333;
   padding: 5px 0px 5px 0px;
-    }
+}
 
 /* form styles */
 
 .contact_info,
 .newsletter_info
-    {
+{
   font-size: 34px;
   text-align: left;
   margin-left: 15px;
   margin-bottom: 0;
-    }
+}
 
 /*fieldset 1*/
 
@@ -67,13 +67,13 @@ hr {
   flex-direction: column;
   margin-left: 15px;
   margin-right: 15px;
-  }
+}
 
 label {
   font-size: 24px;
   color: gray;
   padding-top: 30px;
-  }
+}
 
 input[placeholder="ex. Leslie Knope"],
 input[placeholder="ex. l.knope@prc_pawnee.com"],
@@ -85,20 +85,18 @@ input[placeholder="ex. 12345"] {
   font-style: italic;
   text-align: right;
   padding-right: 8px;
-  }
+}
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="street-address"]
- {
+{
   background-color: #b8d9d0;
   border-radius: 3px;
   height: 50px;
   width: 350px;
-  transition-timing-function: ease-out;
-  transition: 0.7s;
-  }
+}
 
 input[type="postal-code"],
 select {
@@ -114,15 +112,19 @@ select {
   border: none;
   margin-left: 15px;
   margin-right: 15px;
-  }
+}
 
 input[type="checkbox"],
 input[type="radio"]
  {
-  padding: 5px;
+
   margin-right: 15px;
   margin-bottom: 15px;
   }
+
+.newsletter_selection label {
+  padding-top: 0;
+}
 
 .newsletter-format {
 font-size: 20px;
@@ -135,49 +137,64 @@ textarea {
   border-radius: 5px;
   width: 350px;
   height: 100px;
-  }
+  resize: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    background-color: #FFFF66;
+    border: 1px solid #F47E58;
+    transition: background-color 500ms ease-in;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
 
 /*submit button*/
 .sign-up {
-font-size: 20px;
-text-shadow: 1px 1px 1px #000;
-color: white;
-text-align: center;
-background-color: #86cece;
-border: 0;
-border-radius: 3px;
-padding: 10px;
-width: 350px;
-height: 50px;
-margin: 25px;
-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #000;
+  color: white;
+  text-align: center;
+  background-color: #86cece;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px;
+  width: 350px;
+  height: 50px;
+  margin: 25px;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 .sign-up:hover {
-    background-color: #66cdaa;
+  background-color: #66cdaa;
 }
 
 .sign-up:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-              }
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
 
 /*footer styles*/
 
-  footer {
-      background-color: #86cece
-      text-align: center;
-      margin-top: 25px;
-      margin-bottom: 200px;
-      font-size: .9em;
-  }
+footer {
+  background-color: #86cece;
+  text-align: center;
+  padding: 30px;
+  margin-top: 25px;
+  font-size: .9em;
+  color: black;
+  font-style: italic;
+}
 
-  .ft-text {
-  	color: lightgray;
-  	font-style: italic;
-  	margin-top: 15px;
-  }
+
 
 
 
