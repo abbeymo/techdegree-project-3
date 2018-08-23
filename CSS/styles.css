@@ -162,7 +162,7 @@ select:focus{
   text-shadow: 1px 1px 1px #000;
   color: white;
   text-align: center;
-  background-color: #86cece;
+  background-color: #b8d9d0;
   border: 0;
   border-radius: 3px;
   padding: 10px;
@@ -200,28 +200,29 @@ footer {
 
 @media (min-width: 768px) {
 
-.contact_info,
-newsletter_info {
-  margin-left: 50px;
-  margin-right: 50px;
-  }
+.desktop-container {
+  margin-left: 150px;
+  margin-right: 150px;
+}
 
-form {
-  margin-left: 50px;
-  margin-right: 50px;
-  }
-
-  .form-row  {
+.form-row  {
   padding: 10px 0;
   display: flex;
-  
-   }
+  }
 
 .form-row label{
   padding-right: 10px;
-  margin-right: 50px;
-    }
+  padding-top: 0;
+  flex-basis: 25%;
+  }
 
-  .form-row input{
+.form-row input,
+.form-row select {
   flex: 1;
-    }
+  }
+  
+  .zippy input {
+    flex-basis: 25%;
+    
+  }
+}
