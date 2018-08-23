@@ -26,21 +26,33 @@
 <form action="index.html" method="post">
 
 	<fieldset class="user_info">
-		<label for="name">Full Name</label>
-		<input required type="text" id="name" name="user_name" placeholder="ex. Leslie Knope">
+		
+		<div class="form-row">
+			<label for="name">Full Name</label>
+			<input required type="text" id="name" name="user_name" placeholder="ex. Leslie Knope">
+		</div>
 
+		<div class="form-row">
 		<label for="mail">Email</label>
 		<input required type="email" id="mail" name="user_email" placeholder="ex. l.knope@prc_pawnee.com">
+		</div>
 
+		<div class="form-row">
 		<label for="phone">Phone Number</label>
 		<input type="tel" id="phone" name="user_phone" placeholder="ex. (555) 123-4567">
+		</div>
 
+		<div class="form-row">
 		<label for="street-address">Street Address</label>
 		<input type="street-address" id="street-address" name="user_address" placeholder="ex. 14 Swanson St.">
+		</div>
 
+		<div class="form-row">
 		<label for="city">City</label>
 		<input type="text" id="city" name="user_city" placeholder="ex. Pawnee">
+		</div>
 
+		<div class="form-row">
 		<label for="state">State</label>
 		<select id="state" name="user_state">
 			<option value="AL">AL</option>
@@ -95,9 +107,12 @@
 			<option value="WV">WV</option>
 			<option value="WY">WY</option>
 		</select>
+		</div>
 
+		<div class="form-row">
 		<label for="zip">Zip Code</label>
 		<input type="postal-code" id="zip" name="user_zip" placeholder="ex. 12345">
+	</div>
 
 	</fieldset>
 
