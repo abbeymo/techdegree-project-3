@@ -65,19 +65,38 @@ hr {
   border: none;
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
-  margin-right: 15px;
+  width: 100%;
 }
 
 label {
   font-size: 24px;
   color: gray;
   padding-top: 30px;
+  padding-bottom: 10px;
 }
+
+.form-row {
+  padding-top: 20px;
+}
+
+.zippy {
+  display: flex;
+  flex-direction: column;
+  }
+
+.form-row #state {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  font-style: italic;
+  padding-right: 8px;
+  text-align: right;
+  }
+
+ 
 
 input[placeholder="ex. Leslie Knope"],
 input[placeholder="ex. l.knope@prc_pawnee.com"],
-select[placeholder="Choose State"],
 input[placeholder="ex. (555) 123-4567"],
 input[placeholder="ex. 14 Swanson St."],
 input[placeholder="ex. Pawnee"],
@@ -212,7 +231,7 @@ footer {
 
 .form-row label{
   padding-right: 10px;
-  padding-top: 0;
+  padding-top: 10px;
   flex-basis: 25%;
   }
 
@@ -221,8 +240,25 @@ footer {
   flex: 1;
   }
   
-  .zippy input {
-    flex-basis: 25%;
-    
+.zippy {
+    display: flex;  
+    flex-direction: row;
+    padding-top: 10px;
   }
+
+.zippy label {
+  width: 25%;
+  padding-right: 10px;
+  padding-top: 10px;
+  }
+
+
+.othertopics {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+}
 }
