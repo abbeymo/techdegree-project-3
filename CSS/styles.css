@@ -86,14 +86,12 @@ label {
 
 .form-row #state {
   display: flex;
-  flex-direction: column;
   width: 350px;
   font-style: italic;
+  color: lightslategray;
   padding-right: 8px;
   text-align: right;
   }
-
- 
 
 input[placeholder="ex. Leslie Knope"],
 input[placeholder="ex. l.knope@prc_pawnee.com"],
